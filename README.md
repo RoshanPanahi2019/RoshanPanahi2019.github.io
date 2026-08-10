@@ -1,13 +1,15 @@
 # Roshan Panahi, Ph.D.
 
-Professional CV website for Roshan Panahi — Postdoctoral Scholar at the FAMU-FSU College of Engineering.
+Curriculum vitae website for Roshan Panahi — Postdoctoral Scholar at the FAMU-FSU College of Engineering.
 
 **Live site:** https://roshanpanahi2019.github.io/
 
 ## Contents
 
-- About, experience, research publications, education, skills, awards/service, and contact
-- Downloadable CV: `pdf/RoshanPanahi_Resume.pdf`
+- Experience
+- Research publications
+- Education
+- Downloadable CV: `pdf/RoshanPanahi_Resume.pdf` (from the [FAMU-FSU RIDEr profile](https://rider.eng.famu.fsu.edu/person/roshan-panahi))
 
 ## Local preview
 
@@ -16,4 +18,3 @@ python3 -m http.server 8080
 ```
 
 Then open `http://localhost:8080`.
-
