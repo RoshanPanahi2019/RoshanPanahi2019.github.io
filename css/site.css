@@ -179,6 +179,33 @@ a:hover {
   margin-left: max(1.25rem, calc((100% - var(--max)) / 2));
 }
 
+.hero-content-with-photo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: end;
+  max-width: var(--max);
+  width: min(100% - 2.5rem, var(--max));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-copy {
+  max-width: 38rem;
+}
+
+.hero-headshot {
+  width: clamp(8.5rem, 18vw, 11.5rem);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 0.85rem;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  opacity: 0;
+  animation: rise 0.9s ease 0.5s forwards;
+}
+
 .hero-kicker {
   margin: 0 0 1rem;
   font-size: 0.92rem;
@@ -593,10 +620,23 @@ a:hover {
     padding: 0.7rem 0.55rem;
   }
 
-  .hero-content {
+  .hero-content,
+  .hero-content-with-photo {
     padding-top: 4.5rem;
     padding-bottom: 3.5rem;
     margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    width: calc(100% - 2.5rem);
+  }
+
+  .hero-content-with-photo {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 1.5rem;
+  }
+
+  .hero-headshot {
+    order: -1;
   }
 
   .section {
