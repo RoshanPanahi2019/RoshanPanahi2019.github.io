@@ -184,6 +184,17 @@ a:hover {
   gap: 0.55rem;
 }
 
+.hero h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 7vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+  opacity: 0;
+  animation: rise 0.8s ease 0.1s forwards;
+}
+
 .hero-headshot {
   width: clamp(9.5rem, 22vw, 12.5rem);
   height: auto;
@@ -192,18 +203,7 @@ a:hover {
   border-radius: 0.85rem;
   border: 2px solid rgba(255, 255, 255, 0.35);
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
-  margin-bottom: 0.85rem;
-  opacity: 0;
-  animation: rise 0.8s ease 0.1s forwards;
-}
-
-.hero h1 {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(2.6rem, 7vw, 4.4rem);
-  line-height: 1.05;
-  letter-spacing: -0.035em;
-  font-weight: 600;
+  margin: 0.45rem 0 0.35rem;
   opacity: 0;
   animation: rise 0.85s ease 0.22s forwards;
 }
@@ -394,6 +394,36 @@ a:hover {
   margin: 0 0 0.85rem;
   color: var(--accent-deep);
   font-weight: 600;
+}
+
+.section-compact {
+  padding: 3.25rem 0;
+}
+
+.timeline-compact {
+  gap: 0;
+  margin-top: 1.35rem;
+}
+
+.timeline-compact .timeline-item {
+  gap: 1rem;
+  padding: 0.7rem 0;
+  align-items: baseline;
+}
+
+.timeline-compact .timeline-item h3 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+
+.timeline-compact .timeline-item .org {
+  margin: 0.15rem 0 0;
+  font-size: 0.95rem;
+}
+
+.timeline-compact .timeline-meta {
+  font-size: 0.9rem;
+  line-height: 1.35;
 }
 
 .timeline-item ul {
